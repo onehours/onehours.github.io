@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>nginx配置文件示例 | 时痕blog</title>
+  <meta name="keywords" content=" nginx,config ">
+  <meta name="description" content="nginx配置文件示例 | 时痕blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="http://16yang.cn/categories/index.html">
+<meta property="og:site_name" content="时痕blog">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2017-12-31T13:58:40.000Z">
+<meta property="article:modified_time" content="2021-06-16T07:37:59.836Z">
+<meta property="article:author" content="onehours">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>onehours</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/onehours"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="facebook"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/jaytp/activities"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://my.oschina.net/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:871214098@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=871214098&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=88151013"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(6)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="工具">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        工具
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="工具<--->hexo">
+                                        
+                                        hexo
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  "
+               target="_blank"
+                    
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="6">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>command</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>nginx,config</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All 工具 hexo "
+           href="/2021/06/16/hexo-test/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="hexo-test">hexo-test</span>
+            <span class="post-date" title="2021-06-16 17:18:42">2021/06/16</span>
+        </a>
+        
+        <a  class="All "
+           href="/2021/06/16/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2021-06-16 16:13:03">2021/06/16</span>
+        </a>
+        
+        <a  class="All "
+           href="/2018/07/09/2018-07-09-hexo-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="command"
+           data-author="" >
+            <span class="post-title" title="hexo 常用命令">hexo 常用命令</span>
+            <span class="post-date" title="2018-07-09 18:24:12">2018/07/09</span>
+        </a>
+        
+        <a  class="All "
+           href="/2018/05/30/2018-05-30-%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%9A%84%E8%8E%B7%E5%8F%96/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="随机数的获取">随机数的获取</span>
+            <span class="post-date" title="2018-05-30 11:23:43">2018/05/30</span>
+        </a>
+        
+        <a  class="All "
+           href="/2018/05/25/2018-05-25-nginx%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%A4%BA%E4%BE%8B/"
+           data-tag="nginx,config"
+           data-author="" >
+            <span class="post-title" title="nginx配置文件示例">nginx配置文件示例</span>
+            <span class="post-date" title="2018-05-25 12:58:09">2018/05/25</span>
+        </a>
+        
+        <a  class="All "
+           href="/2018/05/24/2018-05-24-%E6%88%91%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E4%BA%86/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="我的hexo博客搭建成功了">我的hexo博客搭建成功了</span>
+            <span class="post-date" title="2018-05-24 18:47:58">2018/05/24</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-2018-05-25-nginx配置文件示例" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">nginx配置文件示例</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">nginx,config</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2021-06-16 15:37:59'>2018-05-25 12:58</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A6%81%E6%AD%A2%E7%9B%B4%E6%8E%A5%E9%80%9A%E8%BF%87IP%E8%AE%BF%E9%97%AE%EF%BC%8C%E8%BF%94%E5%9B%9E501"><span class="toc-text">禁止直接通过IP访问，返回501</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E6%A0%B8%E4%BC%98%E5%8C%96%E9%80%89%E9%A1%B9"><span class="toc-text">内核优化选项</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">ngin启动用户</span></span><br><span class="line">user nginx nginx；</span><br><span class="line"><span class="meta">#</span><span class="bash">由系统自动决定nginx worker进程数，根据CPU核心数，手动设置为CPU核数</span></span><br><span class="line">worker_processes  auto;</span><br><span class="line"><span class="meta">#</span><span class="bash">绑定不通的进程到不同的CPU上4核心实例auto</span></span><br><span class="line"><span class="meta">#</span><span class="bash">worker_processes  4;</span></span><br><span class="line"><span class="meta">#</span><span class="bash">worker_cpu_affinity 0001 0010 0100 1000</span>  </span><br><span class="line"><span class="meta">#</span><span class="bash">错误日志</span></span><br><span class="line">error_log /var/log/nginx/error.log;</span><br><span class="line"><span class="meta">#</span><span class="bash">access_log off; 访问日志关闭</span></span><br><span class="line"><span class="meta">#</span><span class="bash">nginx PID文件默认logs下</span></span><br><span class="line">pid /run/nginx.pid;</span><br><span class="line"><span class="meta">#</span><span class="bash">此参数的作用是改变worker processes 能打开的最大文件数</span></span><br><span class="line">worker_rlimit_nofile 65535;</span><br><span class="line">events &#123;</span><br><span class="line">    #引擎模式默认epoll</span><br><span class="line">	use epoll；</span><br><span class="line">    #每个线程支持的最大连接数</span><br><span class="line">    worker_connections  10240;</span><br><span class="line">&#125;</span><br><span class="line">http &#123;</span><br><span class="line">    #自定义日志格式</span><br><span class="line">    log_format  main  &#x27;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &#x27;</span><br><span class="line">                      &#x27;$status $body_bytes_sent &quot;$http_referer&quot; &#x27;</span><br><span class="line">                      &#x27;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&#x27;;</span><br><span class="line"></span><br><span class="line">    #隐藏nginx版本号</span><br><span class="line">	server_tokens off;</span><br><span class="line"><span class="meta">	#</span><span class="bash">载入支持的媒体类型</span></span><br><span class="line">    include       mime.types;</span><br><span class="line"><span class="meta">	#</span><span class="bash">设置默认的类型</span></span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line">    #开启高效文件传输模式，sendfile指令指定nginx是否调用sendfile函数来输出文件，对于普通应用设为 on，如果用来进行下载等应用磁盘IO重负载应用，可设置为off，以平衡磁盘与网络I/O处理速度，降低系统的负载。</span><br><span class="line">    #注意：如果图片显示不正常把这个改成off。</span><br><span class="line">    sendfile   on;  </span><br><span class="line"><span class="meta">	#</span><span class="bash">客户端链接保持会话的超时时间为60秒，超时服务器会关闭该链接</span></span><br><span class="line">    keepalive_timeout 60; 	</span><br><span class="line">    #必须在sendfile开启模式才有效，防止网路阻塞，积极的减少网络报文段的数量（将响应头和正文的开始部分一起发送，而不一个接一个的发送。）</span><br><span class="line">    tcp_nopush on;    </span><br><span class="line">    #默认情况下数据发送时，内核并不会马上发送，可能会等待更多的自己组成一个数据包，这样可以提高IP性能，但是，在每次只发送很少字节的业务场景，使用tcp_nodelay功能，等待时间会比较长，包涵在keepalived参数才有效</span><br><span class="line">    tcp_nodelay on;</span><br><span class="line">    #server_names域名大小长度</span><br><span class="line">    server_names_hash_bucket_size 128;</span><br><span class="line"><span class="meta">	#</span><span class="bash">用于设置读取客户端请求头数据的超时时间，默认是15秒</span></span><br><span class="line">	client_header_timeout 15s;</span><br><span class="line">    #读取客户端请求主体的超时时间，默认60s</span><br><span class="line">    client_body_timeout 15s;	</span><br><span class="line">    #相应客户端的超时时间，这个超时仅限于两个链接活动之间的时间，如果超过这个时间，客户端没有任何活动，Nginx将会关闭链接，默认值为60s，可以改为参考值25s</span><br><span class="line">	send_timeout 25s;</span><br><span class="line"><span class="meta">	#</span><span class="bash">客户端请求头部的缓冲区大小，这个可以根据你的系统分页大小来设置，一般一个请求头的大小不会超过 1k，不过由于一般系统分页都要大于1k，所以这里设置为分页大小。分页大小可以用命令getconf PAGESIZE取得。</span></span><br><span class="line">	client_header_buffer_size 32k;</span><br><span class="line"><span class="meta">	#</span><span class="bash">告诉nginx关闭不响应的客户端连接。这将会释放那个客户端所占有的内存空间。</span></span><br><span class="line">	reset_timeout_connection on;</span><br><span class="line"><span class="meta">	#</span><span class="bash">上传文件大小限制</span></span><br><span class="line">	client_max_body_size 10m;</span><br><span class="line">	</span><br><span class="line"><span class="meta">	</span></span><br><span class="line"><span class="meta">	#</span><span class="bash">指定链接到后端fastCGI的超时时间</span></span><br><span class="line">    fastcgi_connect_timeout 300;</span><br><span class="line"><span class="meta">	#</span><span class="bash">想fastCGI传送请求的超时时间</span></span><br><span class="line">    fastcgi_send_timeout 300;</span><br><span class="line"><span class="meta">	#</span><span class="bash">指定接收FastCGI应答的超时时间。</span></span><br><span class="line">    fastcgi_read_timeout 300;	</span><br><span class="line">    #指定读取FastCGI应答第一部分需要用多大的缓冲区，默认的缓冲区大小为fastcgi_buffers指令中的每块大小，可以将这个值设置更小。</span><br><span class="line">    fastcgi_buffer_size 64k;	</span><br><span class="line">    #指定本地需要用多少和多大的缓冲区来缓冲FastCGI的应答请求，如果一个php脚本所产生的页面大小为256KB，那么会分配4个64KB的缓冲区来缓存，如果页面大小大于256KB，那么大于256KB的部分会缓存到fastcgi_temp_path指定的路径中，但是这并不是好方法，因为内存中的数据处理速度要快于磁盘。一般这个值应该为站点中php脚本所产生的页面大小的中间值，如果站点大部分脚本所产生的页面大小为256KB，那么可以把这个值设置为“8 32K”、“4 64k”等。</span><br><span class="line">    fastcgi_buffers 4 64k;</span><br><span class="line"><span class="meta">	#</span><span class="bash">建议设置为fastcgi_buffers的两倍，繁忙时候的buffer</span></span><br><span class="line">    fastcgi_busy_buffers_size 128k;	</span><br><span class="line">    #在写入fastcgi_temp_path时将用多大的数据块，默认值是fastcgi_buffers的两倍，该数值设置小时若负载上来时可能报502BadGateway</span><br><span class="line">    fastcgi_temp_file_write_size 256k;</span><br><span class="line"><span class="meta">	#</span><span class="bash">缓存临时目录</span></span><br><span class="line"><span class="meta">	#</span><span class="bash">fastcgi_temp_path /usr/<span class="built_in">local</span>/nginx1.10/nginx_tmp;</span>	</span><br><span class="line">    #这个指令指定是否传递4xx和5xx错误信息到客户端，或者允许nginx使用error_page处理错误信息。注：静态文件不存在会返回404页面，但是php页面则返回空白页！！</span><br><span class="line">    fastcgi_intercept_errors on;	</span><br><span class="line">	</span><br><span class="line">    #注意缓存刷新	#fastcgi_cache缓存目录，可以设置目录层级，比如1:2会生成16*256个子目录，cache_fastcgi是这个缓存空间的名字，cache是用多少内存（这样热门的内容nginx直接放内存，提高访问速度），inactive表示默认失效时间，如果缓存数据在失效时间内没有被访问,将被删除，max_size表示最多用多少硬盘空间。</span><br><span class="line">    fastcgi_cache_path /usr/local/nginx1.10/fastcgi_cache levels=1:2 keys_zone=cache_fastcgi:128 minactive=1d max_size=10g;    #表示开启FastCGI缓存并为其指定一个名称。开启缓存非常有用，可以有效降低CPU的负载，并且防止502的错误放生。cache_fastcgi为proxy_cache_path指令创建的缓存区名称</span><br><span class="line">	fastcgi_cache cache_fastcgi; </span><br><span class="line"><span class="meta">	#</span><span class="bash">用来指定应答代码的缓存时间，实例中的值表示将200和302应答缓存一小时，要和fastcgi_cache配合使用</span></span><br><span class="line">    fastcgi_cache_valid 200 302 1h; </span><br><span class="line"><span class="meta">	#</span><span class="bash">将301应答缓存一天</span></span><br><span class="line">    fastcgi_cache_valid 301 1d;   </span><br><span class="line"><span class="meta">	#</span><span class="bash">将其他应答缓存为1分钟</span></span><br><span class="line">    fastcgi_cache_valid any 1m;</span><br><span class="line"><span class="meta">	#</span><span class="bash">该指令用于设置经过多少次请求的相同URL将被缓存。</span></span><br><span class="line">    fastcgi_cache_min_uses 1;    #该指令用来设置web缓存的Key值,nginx根据Key值md5哈希存储.一般根据$host(域名)、$request_uri(请求的路径)等变量组合成proxy_cache_key 	</span><br><span class="line">    fastcgi_cache_key http://$host$request_uri;</span><br><span class="line"><span class="meta">	#</span><span class="bash">指定FastCGI服务器监听端口与地址，可以是本机或者其它</span></span><br><span class="line">    fastcgi_pass http://url ;</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">	#</span><span class="bash">nginx的缓存功能有：proxy_cache / fastcgi_cache</span></span><br><span class="line">    #proxy_cache的作用是缓存后端服务器的内容，可能是任何内容，包括静态的和动态。</span><br><span class="line">    #fastcgi_cache的作用是缓存fastcgi生成的内容，很多情况是php生成的动态的内容。</span><br><span class="line">    #proxy_cache缓存减少了nginx与后端通信的次数，节省了传输时间和后端宽带。</span><br><span class="line">    #fastcgi_cache缓存减少了nginx与php的通信的次数，更减轻了php和数据库(mysql)的压力。</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">	#</span><span class="bash">启用压缩功能</span></span><br><span class="line">    gzip on;</span><br><span class="line"><span class="meta">	#</span><span class="bash">最小压缩限制,最小字节数</span></span><br><span class="line">    gzip_min_length  1k;</span><br><span class="line"><span class="meta">	#</span><span class="bash">压缩缓存4个16K的</span></span><br><span class="line">    gzip_buffers     4 16k;</span><br><span class="line"><span class="meta">	#</span><span class="bash">压缩版本</span></span><br><span class="line">    gzip_http_version 1.1;</span><br><span class="line"><span class="meta">	#</span><span class="bash">压缩级别9最大，传输速度最快，但处理最慢，也比较消耗cpu资源</span></span><br><span class="line">    gzip_comp_level 2;</span><br><span class="line"><span class="meta">	#</span><span class="bash">压缩的格式</span></span><br><span class="line">    gzip_types     text/plain application/javascript application/x-javascript text/javascript text/css application/xml application/xml+rss;</span><br><span class="line"><span class="meta">	#</span><span class="bash">vary header支持。该选项可以让前端的缓存服务器缓存经过gzip压缩的页面，例如用squid缓存经过nginx压缩的数据，使用前端缓存，前端缓存不解释压缩内容</span></span><br><span class="line">    gzip_vary on;    #Nginx作为反向代理的时候启用，根据某些请求和应答来决定是否在对代理请求的应答启用gzip压缩，是否压缩取决于请求头中的“Via”字段，指令中可以同时指定多个不同的参数 auth - 启用压缩 , 如果header头中包含 &quot;Authorization&quot; 头信息 any - 无条件启用压缩</span><br><span class="line">	gzip_proxied   expired no-cache no-store private auth;</span><br><span class="line"><span class="meta">	#</span><span class="bash">IE浏览器不缓存</span></span><br><span class="line">    gzip_disable   &quot;MSIE [1-6]\.&quot;;</span><br><span class="line"></span><br><span class="line">    #limit_conn_zone $binary_remote_addr zone=perip:10m;</span><br><span class="line">    ##If enable limit_conn_zone,add &quot;limit_conn perip 10;&quot; to server section.</span><br></pre></td></tr></table></figure>
+
+<h2 id="禁止直接通过IP访问，返回501"><a href="#禁止直接通过IP访问，返回501" class="headerlink" title="禁止直接通过IP访问，返回501"></a>禁止直接通过IP访问，返回501</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br></pre></td><td class="code"><pre><span class="line">    server &#123;</span><br><span class="line">      listen 80 default_server;</span><br><span class="line">      server_name _;</span><br><span class="line">      return 501;</span><br><span class="line"><span class="meta">	  #</span><span class="bash">域名跳转</span></span><br><span class="line"><span class="meta">	  #</span><span class="bash">rewrite ^/(.*) http://www.baidu.com/<span class="variable">$1</span> permanent;</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">	server</span><br><span class="line">    &#123;</span><br><span class="line">        listen 80 default_server;</span><br><span class="line">        #listen [::]:80 default_server ipv6only=on;</span><br><span class="line">        server_name _;</span><br><span class="line">        index index.html index.htm index.php;</span><br><span class="line">        root  /home/wwwroot/default;</span><br><span class="line"><span class="meta">		#</span><span class="bash">禁止某IP访问</span></span><br><span class="line">        if ( $remote_addr = 10.0.0.7 ) &#123;</span><br><span class="line">            return 403;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="meta">		#</span><span class="bash">禁止某IP访问</span></span><br><span class="line">        if ( $remote_addr = 218.247.17.130 ) &#123;</span><br><span class="line">            set $allow_access_root &#x27;true&#x27;;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># nginx 7种状态</span></span></span><br><span class="line">        location /nginx_status</span><br><span class="line">        &#123;</span><br><span class="line">            stub_status on;</span><br><span class="line">            access_log   off;</span><br><span class="line">			auth_basic              &quot;NginxStatus&quot;;</span><br><span class="line">            auth_basic_user_file  conf/htpasswd;</span><br><span class="line">        &#125;</span><br><span class="line">     ## 目录浏览功能</span><br><span class="line">	location / &#123;</span><br><span class="line">           autoindex on;</span><br><span class="line">	   #默认为on，显示出文件的确切大小，单位是bytes。</span><br><span class="line">           #改为off后，显示出文件的大概大小，单位是kB或者MB或者GB</span><br><span class="line">	   autoindex_exact_size off;</span><br><span class="line">	   #默认为off，显示的文件时间为GMT时间。</span><br><span class="line">           #改为on后，显示的文件时间为文件的服务器时间</span><br><span class="line">	   autoindex_localtime on;&#125;</span><br><span class="line">	 &#125;</span><br><span class="line"><span class="meta">	#</span><span class="bash">虚拟目录开启目录浏览</span></span><br><span class="line">        location /down/ &#123;</span><br><span class="line">	   alias /home/wwwroot/lnmp/test/;</span><br><span class="line">	   autoindex on;</span><br><span class="line">	 &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        location ~* \.(ico|jpe?g|gif|png|bmp|swf|flv)$ &#123;</span><br><span class="line">		    #缓存30天，</span><br><span class="line">            expires 30d;</span><br><span class="line"><span class="meta">			#</span><span class="bash">是否在error_log中记录不存在的错误。默认是。</span></span><br><span class="line">            #log_not_found off;</span><br><span class="line"><span class="meta">			#</span><span class="bash">日志关闭 提高性能</span></span><br><span class="line">            access_log off;</span><br><span class="line">            &#125;</span><br><span class="line">        location ~.*\.(jpg|png|jpeg|flash|flv|rmvb|rm|wmv|asf)$ &#123;</span><br><span class="line">            expires 2h;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">		#</span><span class="bash">允许访问</span></span><br><span class="line">        location ~ /.well-known &#123;</span><br><span class="line">            allow all;</span><br><span class="line">        &#125;</span><br><span class="line">        #拒绝访问</span><br><span class="line">        location ~ /\.</span><br><span class="line">        &#123;</span><br><span class="line">            deny all;</span><br><span class="line">        &#125;</span><br><span class="line">        #配置Nginx，禁止解析指定目录下的指定程序。</span><br><span class="line">        location ~ ^/images/.*\.(php|php5|sh|pl|py)$ </span><br><span class="line">        &#123;   </span><br><span class="line">		    #允许某个IP访问</span><br><span class="line">		    allow 10.0.0.7 ;</span><br><span class="line">            deny all; </span><br><span class="line">        &#125;</span><br><span class="line"><span class="meta">		#</span><span class="bash">指定错误返回页面</span></span><br><span class="line">		error_page  404  /404.html;</span><br><span class="line">        #指定错误返回链接</span><br><span class="line">        error_page   404  http://oldboy.blog.51cto.com;</span><br><span class="line">        #天猫配置实例</span><br><span class="line">		error_page   500 501 502 503 504  http://err.tmall.com/error2.html;</span><br><span class="line">        error_page 400 403 404 405 408 410 411 412 413 414 415 http://err.tmall.com/error1.html;</span><br><span class="line">        </span><br><span class="line"><span class="meta">		#</span><span class="bash">防爬虫配置</span></span><br><span class="line">		if ($http_user_agent ~* &quot;qihoobot|Baiduspider|Googlebot|Googlebot-Mobile|Googlebot-Image|Mediapartners-Google|Adsbot-Google|Yahoo! Slurp China|YoudaoBot|Sosospider|Sogou spider|Sogou web spider|MSNBot&quot;) &#123;</span><br><span class="line">              return 403;</span><br><span class="line">        &#125; </span><br><span class="line"><span class="meta">		#</span><span class="bash">防盗链策略</span></span><br><span class="line">		location ~*^.+\.(jpg|gif|png|swf|flv|wma|wmv|asf|mp3|mmf|zip|rar)$ &#123;</span><br><span class="line">			ivalid_referers none blocked  *.slyto.top slyto.top;</span><br><span class="line"><span class="meta">			if($</span><span class="bash">invalid_referer) &#123;</span></span><br><span class="line"><span class="meta">			#</span><span class="bash"><span class="built_in">return</span> 302  http://www.benet.com/img/nolink.jpg;</span></span><br><span class="line"><span class="meta">			#</span><span class="bash">rewrite ^/ http://www.123.org/img/nolink.jpg;</span> </span><br><span class="line">			return 404;</span><br><span class="line">			break;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line"></span><br><span class="line">        access_log  /home/wwwlogs/access.log;</span><br><span class="line">    &#125;</span><br><span class="line">    #加载扩展配置</span><br><span class="line">    include       conf.d/*.conf;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    limit_conn_zone $binary_remote_addr zone=addr:10m;</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    server &#123;</span><br><span class="line"></span><br><span class="line">        ...</span><br><span class="line"></span><br><span class="line">        location /download/ &#123;</span><br><span class="line">		    #限制单IP并发数，为一</span><br><span class="line">            limit_conn addr 1;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    limit_conn_zone $binary_remote_addr zone=one:10m rate=1r/s;</span><br><span class="line">    #以请求的客户端IP作为key值，内存名one大小10M内存空间，访问限制为每秒一个请求（request）	</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    server &#123;</span><br><span class="line"></span><br><span class="line">        ...</span><br><span class="line"></span><br><span class="line">        location /download/ &#123;</span><br><span class="line">		    #队列为5的请求</span><br><span class="line">            limit_reg zone=one  burst=5;</span><br><span class="line">			</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="内核优化选项"><a href="#内核优化选项" class="headerlink" title="内核优化选项"></a>内核优化选项</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">fs.file-max = 999999：这个参数表示进程（比如一个worker进程）可以同时打开的最大句柄数，这个参数直线限制最大并发连接数，需根据实际情况配置。</span><br><span class="line">net.ipv4.tcp_max_tw_buckets = 6000 #这个参数表示操作系统允许TIME_WAIT套接字数量的最大值，如果超过这个数字，TIME_WAIT套接字将立刻被清除并打印警告信息。该参数默认为180000，过多的TIME_WAIT套接字会使Web服务器变慢。</span><br><span class="line">注：主动关闭连接的服务端会产生TIME_WAIT状态的连接</span><br><span class="line">net.ipv4.ip_local_port_range = 1024 65000 #允许系统打开的端口范围。</span><br><span class="line">net.ipv4.tcp_tw_recycle = 1#启用timewait快速回收。</span><br><span class="line">net.ipv4.tcp_tw_reuse = 1#开启重用。允许将TIME-WAIT sockets重新用于新的TCP连接。这对于服务器来说很有意义，因为服务器上总会有大量TIME-WAIT状态的连接。</span><br><span class="line">net.ipv4.tcp_keepalive_time = 30：这个参数表示当keepalive启用时，TCP发送keepalive消息的频度。默认是2小时，若将其设置的小一些，可以更快地清理无效的连接。</span><br><span class="line">net.ipv4.tcp_syncookies = 1#开启SYN Cookies，当出现SYN等待队列溢出时，启用cookies来处理。</span><br><span class="line">net.core.somaxconn = 40960 #web 应用中 listen 函数的 backlog 默认会给我们内核参数的 net.core.somaxconn 限制到128，而nginx定义的NGX_LISTEN_BACKLOG 默认为511，所以有必要调整这个值。</span><br><span class="line">注：对于一个TCP连接，Server与Client需要通过三次握手来建立网络连接.当三次握手成功后,我们可以看到端口的状态由LISTEN转变为ESTABLISHED,接着这条链路上就可以开始传送数据了.每一个处于监听(Listen)状态的端口,都有自己的监听队列.监听队列的长度与如somaxconn参数和使用该端口的程序中listen()函数有关</span><br><span class="line">somaxconn参数:定义了系统中每一个端口最大的监听队列的长度,这是个全局的参数,默认值为128，对于一个经常处理新连接的高负载 web服务环境来说，默认的 128 太小了。大多数环境这个值建议增加到 1024 或者更多。大的侦听队列对防止拒绝服务 DoS 攻击也会有所帮助。</span><br><span class="line">net.core.netdev_max_backlog = 262144 #每个网络接口接收数据包的速率比内核处理这些包的速率快时，允许送到队列的数据包的最大数目。</span><br><span class="line">net.ipv4.tcp_max_syn_backlog = 262144 #这个参数标示TCP三次握手建立阶段接受SYN请求队列的最大长度，默认为1024，将其设置得大一些可以使出现Nginx繁忙来不及accept新连接的情况时，Linux不至于丢失客户端发起的连接请求。</span><br><span class="line">net.ipv4.tcp_rmem = 10240 87380 12582912#这个参数定义了TCP接受缓存（用于TCP接受滑动窗口）的最小值、默认值、最大值。</span><br><span class="line">net.ipv4.tcp_wmem = 10240 87380 12582912：这个参数定义了TCP发送缓存（用于TCP发送滑动窗口）的最小值、默认值、最大值。</span><br><span class="line">net.core.rmem_default = 6291456：这个参数表示内核套接字接受缓存区默认的大小。</span><br><span class="line">net.core.wmem_default = 6291456：这个参数表示内核套接字发送缓存区默认的大小。</span><br><span class="line">net.core.rmem_max = 12582912：这个参数表示内核套接字接受缓存区的最大大小。</span><br><span class="line">net.core.wmem_max = 12582912：这个参数表示内核套接字发送缓存区的最大大小。</span><br><span class="line">net.ipv4.tcp_syncookies = 1：该参数与性能无关，用于解决TCP的SYN攻击。</span><br><span class="line"></span><br><span class="line">net.ipv4.tcp_keepalive_time = 30</span><br><span class="line">端口范围</span><br><span class="line">net.ipv4.ip_local_port_range = 1024 65000</span><br></pre></td></tr></table></figure>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 871214098@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
