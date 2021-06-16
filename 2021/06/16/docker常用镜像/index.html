@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>docker常用镜像 | 时痕blog</title>
+  <meta name="keywords" content=" docker ">
+  <meta name="description" content="docker常用镜像 | 时痕blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="本来用typecho的  迁移过程数据库忘记备份导致数据库丢失，在玩玩hexo把">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="http://16yang.cn/about/index.html">
+<meta property="og:site_name" content="时痕blog">
+<meta property="og:description" content="本来用typecho的  迁移过程数据库忘记备份导致数据库丢失，在玩玩hexo把">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-01-01T05:27:13.000Z">
+<meta property="article:modified_time" content="2021-06-16T10:06:05.729Z">
+<meta property="article:author" content="onehours">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>onehours</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/onehours"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="facebook"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/jaytp/activities"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://my.oschina.net/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:871214098@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=871214098&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=88151013"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(5)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="k8s">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        k8s
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="k8s<--->docker">
+                                        
+                                        docker
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="运维">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        运维
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="运维<--->nginx">
+                                        
+                                        nginx
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="运维<--->shell">
+                                        
+                                        shell
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  "
+               target="_blank"
+                    
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="5">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>command</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>nginx,config</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shell</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All k8s docker "
+           href="/2021/06/16/docker%E5%B8%B8%E7%94%A8%E9%95%9C%E5%83%8F/"
+           data-tag="docker"
+           data-author="" >
+            <span class="post-title" title="docker常用镜像">docker常用镜像</span>
+            <span class="post-date" title="2021-06-16 20:03:53">2021/06/16</span>
+        </a>
+        
+        <a  class="All "
+           href="/2018/07/09/2018-07-09-hexo-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="command"
+           data-author="" >
+            <span class="post-title" title="hexo 常用命令">hexo 常用命令</span>
+            <span class="post-date" title="2018-07-09 18:24:12">2018/07/09</span>
+        </a>
+        
+        <a  class="All 运维 shell "
+           href="/2018/05/30/2018-05-30-%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%9A%84%E8%8E%B7%E5%8F%96/"
+           data-tag="shell"
+           data-author="" >
+            <span class="post-title" title="随机数的获取">随机数的获取</span>
+            <span class="post-date" title="2018-05-30 11:23:43">2018/05/30</span>
+        </a>
+        
+        <a  class="All 运维 nginx "
+           href="/2018/05/25/2018-05-25-nginx%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%A4%BA%E4%BE%8B/"
+           data-tag="nginx,config"
+           data-author="" >
+            <span class="post-title" title="nginx配置文件示例">nginx配置文件示例</span>
+            <span class="post-date" title="2018-05-25 12:58:09">2018/05/25</span>
+        </a>
+        
+        <a  class="All "
+           href="/2018/05/24/2018-05-24-%E6%88%91%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E4%BA%86/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="我的hexo博客搭建成功了">我的hexo博客搭建成功了</span>
+            <span class="post-date" title="2018-05-24 18:47:58">2018/05/24</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-docker常用镜像" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">docker常用镜像</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="k8s">k8s</a> > 
+            
+            <a  data-rel="k8s&lt;---&gt;docker">docker</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color2">docker</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2021-06-16 20:09:00'>2021-06-16 20:03</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E9%95%9C%E5%83%8F"><span class="toc-text">基础镜像</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-Busybox"><span class="toc-text">1.1 Busybox</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-Alpine"><span class="toc-text">1.2  Alpine</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Alpine-apk-add-%E4%BB%8E%E9%9B%B6%E6%90%AD%E5%BB%BA-php7-2-fpm-nginx"><span class="toc-text">Alpine(apk add)从零搭建 php7.2-fpm + nginx</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#apk-%E5%8C%85%E7%AE%A1%E7%90%86"><span class="toc-text">apk 包管理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-Ubuntu"><span class="toc-text">1.3  Ubuntu</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-Centos-Fedora"><span class="toc-text">1.4  Centos&#x2F;Fedora</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E9%95%9C%E5%83%8F"><span class="toc-text">应用镜像</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-whoami"><span class="toc-text">1.5 whoami</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nginx-php-fpm"><span class="toc-text">nginx+php-fpm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mysql"><span class="toc-text">mysql</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#solo"><span class="toc-text">solo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#traefik"><span class="toc-text">traefik</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#typecho"><span class="toc-text">typecho</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#docker-%E6%9C%89%E8%B6%A3%E9%95%9C%E5%83%8F"><span class="toc-text">docker 有趣镜像</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#jumpserver"><span class="toc-text">jumpserver</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E5%AE%89%E5%85%A8%E6%A3%80%E6%9F%A5"><span class="toc-text">docker安全检查</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker-compose"><span class="toc-text">docker-compose</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E4%BD%BF%E7%94%A8%E4%BE%8B%E5%AD%90"><span class="toc-text">1.1 *使用例子*</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-1-wordpress-mysql"><span class="toc-text">1.1.1 *wordpress+mysql*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-2-django%E8%BF%90%E8%A1%8C%E7%9A%84%E4%BE%8B%E5%AD%90"><span class="toc-text">1.1.2 *django运行的例子*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-3-rails"><span class="toc-text">1.1.3 *rails*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-4-prometheus-%E5%9F%BA%E7%A1%80%E4%B8%89%E4%BB%B6%E5%A5%97"><span class="toc-text">1.1.4 *prometheus**基础三件套*</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="基础镜像"><a href="#基础镜像" class="headerlink" title="基础镜像"></a>基础镜像</h2><h3 id="1-1-Busybox"><a href="#1-1-Busybox" class="headerlink" title="1.1 Busybox"></a>1.1 Busybox</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --rm -v /data:/data  -it busybox  sh</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-Alpine"><a href="#1-2-Alpine" class="headerlink" title="1.2  Alpine"></a><strong>1.2</strong>  Alpine</h3> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Alpine Linux的优劣优势</span><br><span class="line"></span><br><span class="line">Alpine Linux的Docker镜像特点是轻巧（大小只有5M）且有完整的包管理工具(APK)。</span><br><span class="line"></span><br><span class="line">Docker官方镜像可能会用Alpine Linux替换Ubuntu。</span><br><span class="line"></span><br><span class="line">劣势</span><br><span class="line"></span><br><span class="line">Alpine Linux使用了musl，可能和其他Linux发行版使用的glibc实现会有些不同。</span><br><span class="line"></span><br><span class="line">musl实现的DNS服务不会使用resolv.conf文件中的search和domain两个配置，通过DNS来进行服务发现时需要注意。</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --rm -v /data:/data  -it alpine sh</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h4 id="Alpine-apk-add-从零搭建-php7-2-fpm-nginx"><a href="#Alpine-apk-add-从零搭建-php7-2-fpm-nginx" class="headerlink" title="Alpine(apk add)从零搭建 php7.2-fpm + nginx"></a>Alpine(apk add)从零搭建 php7.2-fpm + nginx</h4><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/b5428d0b1651">https://www.jianshu.com/p/b5428d0b1651</a></p>
+<p>Alpine以它的小巧和实用深受总多开发者的喜爱，而提到Alpine的Linux，其包管理工具apk则是在Alpine中使用广泛的一个工具，这篇文章简要介绍一下常见的使用方式。</p>
+<p>什么是apk<br>Alpine Linux的包管理工具主要包含两部分内容：</p>
+<p>包管理：提供安装/更新/删除包的功能<br>系统备份恢复：将系统恢复至之前安装和配置的备份状态<br>而具体实现上述两部分功能的工具则是apk和lbu</p>
+<p>功能    工具    缩写<br>包管理    apk    Alpine Linux package manager.<br>系统备份恢复    lbu    Alpine Local Backup<br>————————————————<br>版权声明：本文为CSDN博主「淼叔」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/liumiaocn/article/details/87603628">https://blog.csdn.net/liumiaocn/article/details/87603628</a></p>
+<p>命令类别    子命令    命令说明<br>包管理    add    添加指定包并确认所有依赖满足要求<br>包管理    del    删除指定包<br>系统维护    fix    在不改动主要的依赖的情况下进行包的修复或者升级<br>系统维护    update    从远程仓库获取信息更新本地仓库索引<br>系统维护    upgrade    对已安装了的包进行更新<br>系统维护    cache    对缓存进行操作，比如对缺失的包进行缓存或者对于不需要的包进行缓存删除<br>信息查询    info    对于指定的包进行包或者仓库的详细信息进行显示<br>信息查询    list    按照指定条件进行包的列表信息显示<br>信息查询    search    查询相关的包的详细信息<br>信息查询    dot    生成依赖之间的关联关系图（使用箭头描述）<br>信息查询    policy    显示包的仓库策略信息<br>信息查询    stats    显示仓库和包的安装相关的统计信息<br>仓库管理    index    使用文件生成仓库索引文件<br>仓库管理    fetch    从全局仓库下载包到本地目录<br>仓库管理    verify    验证包的完整性和签名信息<br>仓库管理    manifest    显示package各组成部分的checksum</p>
+<h4 id="apk-包管理"><a href="#apk-包管理" class="headerlink" title="apk 包管理"></a>apk 包管理</h4><ol>
+<li>修改alpine镜像中的默认源地址信息</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 中科大</span><br><span class="line">sed -i &#x27;s/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g&#x27; /etc/apk/repositories</span><br><span class="line"># 阿里云</span><br><span class="line">sed -i &#x27;s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g&#x27; /etc/apk/repositories</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">2. 修改Dockerfile</span><br><span class="line"></span><br><span class="line">修改项目中的Dockerfile,在Dockerfile中的所有 FROM ...alpine... 语句后面添加如下语句：</span><br><span class="line">RUN set -eux &amp;&amp; sed -i &#x27;s/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g&#x27; /etc/apk/repositories</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>包管理器apk包管理命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">Alpine使用apk进行包管理，通过apk --help命令查看完整的包管理命令，下面列举常用命令：</span><br><span class="line"></span><br><span class="line">1、update:从远程镜像源中更新本地镜像源索引</span><br><span class="line"></span><br><span class="line">update命令会从各个镜像源列表下载APKINDEX.tar.gz并存储到本地缓存，一般在/var/cache/apk/(Alpine在该目录下)、 /var/lib/apk/ 、/etc/apk/cache/下。</span><br><span class="line"></span><br><span class="line">$ apk update</span><br><span class="line"></span><br><span class="line">2、add:安装PACKAGES并自动解决依赖关系</span><br><span class="line"></span><br><span class="line">add命令从仓库中安装软件包，自动管理依赖。</span><br><span class="line"></span><br><span class="line">$ apk addopenssh openntp vim</span><br><span class="line"></span><br><span class="line">$ apk add--no-cache mysql-client</span><br><span class="line"></span><br><span class="line">$ apk adddocker --update-cache --repository http: //mirrors.ustc.edu.cn/alpine/v3.4/main/ --allow-untrusted</span><br><span class="line"></span><br><span class="line">安装指定版本软件包</span><br><span class="line"></span><br><span class="line">$ apk addasterisk= 1.6.0.21-r0</span><br><span class="line"></span><br><span class="line">$ apk add&#x27;asterisk&lt;1.6.1&#x27;</span><br><span class="line"></span><br><span class="line">$ apk add&#x27;asterisk&gt;1.6.1&#x27;</span><br><span class="line"></span><br><span class="line">3、del:卸载并删除PACKAGES</span><br><span class="line"></span><br><span class="line">$ apk del openssh openntp vim</span><br><span class="line"></span><br><span class="line">4、upgrade:升级当前已安装的软件包</span><br><span class="line"></span><br><span class="line">upgrade命令升级系统已安装的所以软件包（一般包括内核），当然也可指定仅升级部分软件包（通过-u或--upgrade选择指定）。</span><br><span class="line"></span><br><span class="line">$ apk update #更新最新本地镜像源</span><br><span class="line"></span><br><span class="line">$ apk upgrade #升级软件</span><br><span class="line"></span><br><span class="line">$ apk add --upgrade busybox #指定升级部分软件包</span><br><span class="line"></span><br><span class="line">5、search:搜索软件包</span><br><span class="line"></span><br><span class="line">search命令搜索可用软件包，-v参数输出描述内容，支出通配符，-d或—deion参数指定通过软件包描述查询。</span><br><span class="line"></span><br><span class="line">$ apk search #查找所以可用软件包</span><br><span class="line"></span><br><span class="line">$ apk search -v #查找所以可用软件包及其描述内容</span><br><span class="line"></span><br><span class="line">$ apk search -v &#x27;acf*&#x27;#通过软件包名称查找软件包</span><br><span class="line"></span><br><span class="line">$ apk search -v -d &#x27;docker&#x27;#通过描述文件查找特定的软件包</span><br><span class="line"></span><br><span class="line">6、info命令用于显示软件包的信息。</span><br><span class="line"></span><br><span class="line">$ apk info #列出所有已安装的软件包</span><br><span class="line"></span><br><span class="line">$ apk info -a zlib #显示完整的软件包信息</span><br><span class="line"></span><br><span class="line">$ apk info --who-owns /sbin/lbu #显示指定文件属于的包</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+<h3 id="1-3-Ubuntu"><a href="#1-3-Ubuntu" class="headerlink" title="1.3  Ubuntu"></a><strong>1.3</strong>  Ubuntu</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">创建Dockerfile并且更新apt源</span><br><span class="line">在Dockerfile中添加如下两句代码：</span><br><span class="line"></span><br><span class="line">RUN  sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list</span><br><span class="line">RUN  apt-get clean</span><br><span class="line">更新apt源的Dockerfile如下：</span><br><span class="line"></span><br><span class="line">FROM ubuntu:latest</span><br><span class="line">MAINTAINER kk &quot;kk@qq.com&quot;</span><br><span class="line">RUN  sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list</span><br><span class="line">RUN  apt-get clean</span><br><span class="line">RUN apt-get update</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h3 id="1-4-Centos-Fedora"><a href="#1-4-Centos-Fedora" class="headerlink" title="1.4  Centos/Fedora"></a><strong>1.4</strong>  Centos/Fedora</h3><h2 id="应用镜像"><a href="#应用镜像" class="headerlink" title="应用镜像"></a>应用镜像</h2><h3 id="1-5-whoami"><a href="#1-5-whoami" class="headerlink" title="1.5 whoami"></a>1.5 whoami</h3><p>使用whoami应用作为一个简易的HTTP Web服务：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">emilevauge/whoami</span><br><span class="line">traefik/whoami      </span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker run -d -p 801:80 traefik/whoami</span> </span><br><span class="line">e938648fc890b1318e4b2c7c7aa271fab5ac9c8516d7d1738825377a85f19ee8</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> root @ txbjc791c2g101 <span class="keyword">in</span> ~ [12:15:00]</span> </span><br><span class="line"><span class="meta">$</span><span class="bash"> curl 127.0.0.1:801</span></span><br><span class="line">Hostname: e938648fc890</span><br><span class="line">IP: 127.0.0.1</span><br><span class="line">IP: 172.17.0.3</span><br><span class="line">RemoteAddr: 172.17.0.1:56030</span><br><span class="line">GET / HTTP/1.1</span><br><span class="line">Host: 127.0.0.1:801</span><br><span class="line">User-Agent: curl/7.29.0</span><br><span class="line">Accept: */*</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker run -d -p 802:80 emilevauge/whoami</span>              </span><br><span class="line">931f2b6ca23c36ad81f144f57ac8baaa50c5f56c8ddcc0fbbaf4c1ad81f0a692</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> root @ txbjc791c2g101 <span class="keyword">in</span> ~ [12:15:57]</span> </span><br><span class="line"><span class="meta">$</span><span class="bash"> curl 127.0.0.1:802</span>                       </span><br><span class="line">Hostname: 931f2b6ca23c</span><br><span class="line">IP: 127.0.0.1</span><br><span class="line">IP: 172.17.0.4</span><br><span class="line">GET / HTTP/1.1</span><br><span class="line">Host: 127.0.0.1:802</span><br><span class="line">User-Agent: curl/7.29.0</span><br><span class="line">Accept: */*</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> root @ txbjc791c2g101 <span class="keyword">in</span> ~ [12:16:21]</span> </span><br><span class="line"><span class="meta">$</span><span class="bash"> docker run -d -p 803:80 nginx</span>             </span><br><span class="line">0670dc9934518b9010ad7a909978f869c0926aee1a6fe4ec7cdfff90b9310f4d</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> root @ txbjc791c2g101 <span class="keyword">in</span> ~ [12:30:26] C:1</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> curl 127.0.0.1:803</span></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;title&gt;Welcome to nginx!&lt;/title&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body &#123;</span><br><span class="line">        width: 35em;</span><br><span class="line">        margin: 0 auto;</span><br><span class="line">        font-family: Tahoma, Verdana, Arial, sans-serif;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;h1&gt;Welcome to nginx!&lt;/h1&gt;</span><br><span class="line">&lt;p&gt;If you see this page, the nginx web server is successfully installed and</span><br><span class="line">working. Further configuration is required.&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;For online documentation and support please refer to</span><br><span class="line">&lt;a href=&quot;http://nginx.org/&quot;&gt;nginx.org&lt;/a&gt;.&lt;br/&gt;</span><br><span class="line">Commercial support is available at</span><br><span class="line">&lt;a href=&quot;http://nginx.com/&quot;&gt;nginx.com&lt;/a&gt;.&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;&lt;em&gt;Thank you for using nginx.&lt;/em&gt;&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">$ docker search whoami           </span><br><span class="line">NAME                    DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED</span><br><span class="line">containous/whoami        Tiny Go webserver that prints os informatio…   56                   </span><br><span class="line">emilevauge/whoami                                                       29                   </span><br><span class="line">jwilder/whoami                                                          23                   [OK]</span><br><span class="line">stefanscherer/whoami    whoami multi-arch image                         15                   </span><br><span class="line">traefik/whoami                                                          7                    </span><br><span class="line">containous/whoamitcp                                                    3                    </span><br><span class="line">sixeyed/whoami-dotnet                                                   1                    </span><br><span class="line">traefik/whoamiudp                                                       1                    </span><br><span class="line">containous/whoamiudp                                                    1                    </span><br><span class="line">training/whoami         HTTP docker service printing it&#x27;s container …   1                    </span><br><span class="line">traefik/whoamitcp                                                       1                    </span><br><span class="line">subicura/whoami         minimal whoami web server                       0                    </span><br><span class="line">tons/whoami             Simple spring whoami application                0                    [OK]</span><br><span class="line">chirogocki/whoami       Multiarch from https://github.com/containous…   0                    </span><br><span class="line">nivekbe/whoami          whoami running on Node.js                       0                    </span><br><span class="line">btheu/whoami            whoami with environment variables               0                    [OK]</span><br><span class="line">idoall/whoami           Simple HTTP docker service that prints it&#x27;s …   0                    </span><br><span class="line">razikus/whoami                                                          0                    </span><br><span class="line">tons/whoami-mn                                                          0                    </span><br><span class="line">ctmagazin/whoami        A multiarch version of containous/whoami        0                    </span><br><span class="line">alexbardas/whoami       HTTP docker nodejs service that renders cont…   0                    </span><br><span class="line">matsubara0507/whoami    https://github.com/matsubara0507/whoami         0                    </span><br><span class="line">pingbo/whoami           Forked from https://github.com/jwilder/whoami   0                    [OK]</span><br><span class="line">jeromechrist/whoami     build auto for jeromechrist/whoami              0                    [OK]</span><br><span class="line">kingdevnl/whoami                                                        0                    </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h3 id="nginx-php-fpm"><a href="#nginx-php-fpm" class="headerlink" title="nginx+php-fpm"></a>nginx+php-fpm</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> docker run --name php-rc-fpm -v ~/nginx/wwwroot/:/var/www/html/  -d php:5.6-fpm</span></span><br><span class="line">docker run --name php-rc-fpm -v ~/nginx/wwwroot/:/var/www/html/  -d php:rc-fpm</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker run --name php-nginx -p 8083:80 -d     -v ~/nginx/conf.d/:/etc/nginx/conf.d/     -v ~/nginx/wwwroot/:/var/www/html/     --link php-rc-fpm     nginx</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">--link php-rc-fpm  创建连接到其他容器的映射，后面跟冒号改名</span><br><span class="line">并通过修改nginx的 /etc/hosts，把域名 php 映射成容器ip，让 nginx 通过 php-rc-fpm:9000 访问 php-fpm。</span><br><span class="line">172.17.0.2      php-rc-fpm 406d157ed7e1</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">docker run -p 3306:3306 --name mymysql -v /data/mysql/conf:/etc/mysql/conf.d -v /data/mysql/logs:/logs -v /data/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7.31</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="solo"><a href="#solo" class="headerlink" title="solo"></a>solo</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker run --detach --name solo --network=host \\</span><br><span class="line">    --env JDBC_USERNAME=&quot;solo&quot; \\</span><br><span class="line">    --env JDBC_URL=&quot;jdbc:mysql://127.0.0.1:3306/solo?useUnicode=yes&amp;characterEncoding=UTF-8&amp;useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&quot; \\</span><br><span class="line">    b3log/solo --listen_port=8080 --server_scheme=http --server_host=120.92.103.106 --server_port=8080</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="traefik"><a href="#traefik" class="headerlink" title="traefik"></a>traefik</h3><p><a target="_blank" rel="noopener" href="https://docs.traefik.cn/">https://docs.traefik.cn/</a></p>
+<p><a target="_blank" rel="noopener" href="https://docs.traefik.cn/basics">https://docs.traefik.cn/basics</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/97420459">https://zhuanlan.zhihu.com/p/97420459</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiao987334176/p/12447783.html">https://www.cnblogs.com/xiao987334176/p/12447783.html</a></p>
+<h2 id="typecho"><a href="#typecho" class="headerlink" title="typecho"></a>typecho</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name=mytypecho --restart always -e PHP_TZ=Asia/Shanghai -e PHP_MAX_EXECUTION_TIME=600 -p 8903:80 80x86/typecho:latest</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="docker-有趣镜像"><a href="#docker-有趣镜像" class="headerlink" title="docker 有趣镜像"></a>docker 有趣镜像</h1><p>ocker一键安装脚本<br>wget -qO- get.docker.com | sh     #官方安装<br>curl -sSL <a target="_blank" rel="noopener" href="https://get.daocloud.io/docker">https://get.daocloud.io/docker</a> | sh     #国内daodocker安装,推荐<br>镜像1：rastasheep/ubuntu-sshd （带ssh的ubuntu）<br>地址：<a target="_blank" rel="noopener" href="https://hub.docker.com/r/rastasheep/ubuntu-sshd/">https://hub.docker.com/r/rastasheep/ubuntu-sshd/</a><br>sudo docker run -d -p 22:22 rastasheep/ubuntu-sshd:16.04     用户名、密码为root<br>镜像2：itscaro/debian-ssh （带ssh的ubuntu）<br>地址：<a target="_blank" rel="noopener" href="https://hub.docker.com/r/itscaro/debian-ssh/">https://hub.docker.com/r/itscaro/debian-ssh/</a><br>sudo docker run -d -p 22:22 itscaro/debian-ssh     用户名、密码为root<br>镜像3：tutum/centos （带ssh的centos）<br>地址：<a target="_blank" rel="noopener" href="https://hub.docker.com/r/tutum/centos/">https://hub.docker.com/r/tutum/centos/</a><br>sudo docker run -d -p 22:22 tutum/centos （centos7：tutum/centos:centos7)<br>用户名root，密码随机. 请执行 docker logs 查看 可在运行时设置密码<br>示例: docker run -d -p 0.0.0.0:2222:22 -e ROOT_PASS=”mypass” tutum/centos  #mypass改为密码即可<br>镜像4：alexwhen/docker-2048（游戏2048）<br>地址：<a target="_blank" rel="noopener" href="https://hub.docker.com/r/alexwhen/docker-2048/">https://hub.docker.com/r/alexwhen/docker-2048/</a><br>sudo docker run -d -p 80:80 alexwhen/docker-2048<br>镜像5：dorowu/ubuntu-desktop-lxde-vnc（noVNC、Firefox51）<br>地址：[su_permalink]<a target="_blank" rel="noopener" href="https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/">https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/</a><br>docker run -it -p 80:80 dorowu/ubuntu-desktop-lxde-vnc Browse <a target="_blank" rel="noopener" href="http://localhost/">http://localhost/</a><br>镜像6：consol/centos-xfce-vnc （VNC、noVNC、密码、chrome、Firefox45）<br>地址：[su_permalink]<a target="_blank" rel="noopener" href="https://hub.docker.com/r/consol/ubuntu-xfce-vnc/">https://hub.docker.com/r/consol/ubuntu-xfce-vnc/</a><br>run -it -p 5901:5901 -p 6901:6901 -e “VNC_PW=my-new-password” -e VNC_RESOLUTION=800x600 consol/centos-xfce-vnc<br>默认VNC密码：vncpassword VNC-Server (default VNC port 5901) noVNC - HTML5 VNC client (default http port 6901)<br>其他相关 consol/centos-xfce-vnc: Centos7 with Xfce4 UI session<br>consol/ubuntu-xfce-vnc: Ubuntu with Xfce4 UI session<br>consol/centos-icewm-vnc: dev Centos7 with IceWM UI session<br>consol/ubuntu-icewm-vnc: dev Ubuntu with IceWM UI session<br>镜像7：fish/peerflix-server （支持磁力，种子）<br>地址：<a target="_blank" rel="noopener" href="https://hub.docker.com/r/fish/peerflix-server">https://hub.docker.com/r/fish/peerflix-server</a><br>docker run -it -p 9000:9000 fish/peerflix-server Browse <a target="_blank" rel="noopener" href="http://localhost:9000/">http://localhost:9000/</a><br>镜像8：forsaken-mail（临时邮箱）<br>地址<a target="_blank" rel="noopener" href="https://hub.docker.com/r/rockmaity/forsaken-mail/">https://hub.docker.com/r/rockmaity/forsaken-mail/</a><br>docker run –name forsaken-mail -itd -p 25:25 -p 3000:3000 rockmaity/forsaken-mail Browse <a target="_blank" rel="noopener" href="http://ip:3000/">http://ip:3000/</a><br>镜像9：nextcloud<br>地址: <a target="_blank" rel="noopener" href="https://hub.docker.com/_/nextcloud/">https://hub.docker.com/_/nextcloud/</a><br>docker run -d -p 8080:80 nextcloud<br>目录映射: docker run -d \ -v nextcloud:/var/www/html \ nextcloud<br>Last modification：January 29th, 2019 at 02:49 pm</p>
+<h2 id="jumpserver"><a href="#jumpserver" class="headerlink" title="jumpserver"></a>jumpserver</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">docker run --name repo alpine/git clone https://github.com/docker/getting-started.git</span><br><span class="line">docker cp repo:/git/getting-started/ .</span><br><span class="line"></span><br><span class="line">docker run -d -p 80:80 --name docker-tutorial docker101tutorial</span><br><span class="line"></span><br><span class="line">docker tag images images2</span><br><span class="line">docker push images2</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cd getting-started</span><br><span class="line">docker build -t docker101tutorial</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h2 id="docker安全检查"><a href="#docker安全检查" class="headerlink" title="docker安全检查"></a>docker安全检查</h2><p>docker/docker-bench-security</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker run --rm --net host --pid host --userns host --cap-add audit_control     -e DOCKER_CONTENT_TRUST=$DOCKER_CONTENT_TRUST     -v /etc:/etc:ro     -v /usr/bin/containerd:/usr/bin/containerd:ro     -v /usr/bin/runc:/usr/bin/runc:ro     -v /usr/lib/systemd:/usr/lib/systemd:ro     -v /var/lib:/var/lib:ro     -v /var/run/docker.sock:/var/run/docker.sock:ro     --label docker_bench_security     docker/docker-bench-security</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> ------------------------------------------------------------------------------</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Docker Bench <span class="keyword">for</span> Security v1.3.4</span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="bash"><span class="comment"># Docker, Inc. (c) 2015-</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"></span></span><br><span class="line"><span class="bash"><span class="comment"># Checks for dozens of common best-practices around deploying Docker containers in production.</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Inspired by the CIS Docker Community Edition Benchmark v1.1.0.</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> ------------------------------------------------------------------------------</span></span><br><span class="line"></span><br><span class="line">Initializing Tue Jan 19 01:40:30 UTC 2021</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[INFO] 1 - Host Configuration</span><br><span class="line">[WARN] 1.1  - Ensure a separate partition for containers has been created</span><br><span class="line">[NOTE] 1.2  - Ensure the container host has been Hardened</span><br><span class="line">[INFO] 1.3  - Ensure Docker is up to date</span><br><span class="line">[INFO]      * Using 20.10.1, verify is it up to date as deemed necessary</span><br><span class="line">[INFO]      * Your operating system vendor may provide support and security maintenance for Docker</span><br><span class="line">[INFO] 1.4  - Ensure only trusted users are allowed to control Docker daemon</span><br><span class="line">[INFO]      * docker:x:992</span><br><span class="line">[WARN] 1.5  - Ensure auditing is configured for the Docker daemon</span><br><span class="line">[WARN] 1.6  - Ensure auditing is configured for Docker files and directories - /var/lib/docker</span><br><span class="line">[WARN] 1.7  - Ensure auditing is configured for Docker files and directories - /etc/docker</span><br><span class="line">[WARN] 1.8  - Ensure auditing is configured for Docker files and directories - docker.service</span><br><span class="line">[WARN] 1.9  - Ensure auditing is configured for Docker files and directories - docker.socket</span><br><span class="line">[INFO] 1.10  - Ensure auditing is configured for Docker files and directories - /etc/default/docker</span><br><span class="line">[INFO]      * File not found</span><br><span class="line">[WARN] 1.11  - Ensure auditing is configured for Docker files and directories - /etc/docker/daemon.json</span><br><span class="line">[INFO] 1.12  - Ensure auditing is configured for Docker files and directories - /usr/bin/docker-containerd</span><br><span class="line">[INFO]      * File not found</span><br><span class="line">[INFO] 1.13  - Ensure auditing is configured for Docker files and directories - /usr/bin/docker-runc</span><br><span class="line">[INFO]      * File not found</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[INFO] 2 - Docker daemon configuration</span><br><span class="line">[WARN] 2.1  - Ensure network traffic is restricted between containers on the default bridge</span><br><span class="line">[PASS] 2.2  - Ensure the logging level is set to &#x27;info&#x27;</span><br><span class="line">[PASS] 2.3  - Ensure Docker is allowed to make changes to iptables</span><br><span class="line">[PASS] 2.4  - Ensure insecure registries are not used</span><br><span class="line">[PASS] 2.5  - Ensure aufs storage driver is not used</span><br><span class="line">[INFO] 2.6  - Ensure TLS authentication for Docker daemon is configured</span><br><span class="line">[INFO]      * Docker daemon not listening on TCP</span><br><span class="line">[INFO] 2.7  - Ensure the default ulimit is configured appropriately</span><br><span class="line">[INFO]      * Default ulimit doesn&#x27;t appear to be set</span><br><span class="line">[WARN] 2.8  - Enable user namespace support</span><br><span class="line">[PASS] 2.9  - Ensure the default cgroup usage has been confirmed</span><br><span class="line">[PASS] 2.10  - Ensure base device size is not changed until needed</span><br><span class="line">[WARN] 2.11  - Ensure that authorization for Docker client commands is enabled</span><br><span class="line">[WARN] 2.12  - Ensure centralized and remote logging is configured</span><br><span class="line">[INFO] 2.13  - Ensure operations on legacy registry (v1) are Disabled (Deprecated)</span><br><span class="line">[WARN] 2.14  - Ensure live restore is Enabled</span><br><span class="line">[WARN] 2.15  - Ensure Userland Proxy is Disabled</span><br><span class="line">[PASS] 2.16  - Ensure daemon-wide custom seccomp profile is applied, if needed</span><br><span class="line">[PASS] 2.17  - Ensure experimental features are avoided in production</span><br><span class="line">[WARN] 2.18  - Ensure containers are restricted from acquiring new privileges</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[INFO] 3 - Docker daemon configuration files</span><br><span class="line">[PASS] 3.1  - Ensure that docker.service file ownership is set to root:root</span><br><span class="line">[PASS] 3.2  - Ensure that docker.service file permissions are set to 644 or more restrictive</span><br><span class="line">[PASS] 3.3  - Ensure that docker.socket file ownership is set to root:root</span><br><span class="line">[PASS] 3.4  - Ensure that docker.socket file permissions are set to 644 or more restrictive</span><br><span class="line">[PASS] 3.5  - Ensure that /etc/docker directory ownership is set to root:root</span><br><span class="line">[PASS] 3.6  - Ensure that /etc/docker directory permissions are set to 755 or more restrictive</span><br><span class="line">[INFO] 3.7  - Ensure that registry certificate file ownership is set to root:root</span><br><span class="line">[INFO]      * Directory not found</span><br><span class="line">[INFO] 3.8  - Ensure that registry certificate file permissions are set to 444 or more restrictive</span><br><span class="line">[INFO]      * Directory not found</span><br><span class="line">[INFO] 3.9  - Ensure that TLS CA certificate file ownership is set to root:root</span><br><span class="line">[INFO]      * No TLS CA certificate found</span><br><span class="line">[INFO] 3.10  - Ensure that TLS CA certificate file permissions are set to 444 or more restrictive</span><br><span class="line">[INFO]      * No TLS CA certificate found</span><br><span class="line">[INFO] 3.11  - Ensure that Docker server certificate file ownership is set to root:root</span><br><span class="line">[INFO]      * No TLS Server certificate found</span><br><span class="line">[INFO] 3.12  - Ensure that Docker server certificate file permissions are set to 444 or more restrictive</span><br><span class="line">[INFO]      * No TLS Server certificate found</span><br><span class="line">[INFO] 3.13  - Ensure that Docker server certificate key file ownership is set to root:root</span><br><span class="line">[INFO]      * No TLS Key found</span><br><span class="line">[INFO] 3.14  - Ensure that Docker server certificate key file permissions are set to 400</span><br><span class="line">[INFO]      * No TLS Key found</span><br><span class="line">[PASS] 3.15  - Ensure that Docker socket file ownership is set to root:docker</span><br><span class="line">[PASS] 3.16  - Ensure that Docker socket file permissions are set to 660 or more restrictive</span><br><span class="line">[PASS] 3.17  - Ensure that daemon.json file ownership is set to root:root</span><br><span class="line">[PASS] 3.18  - Ensure that daemon.json file permissions are set to 644 or more restrictive</span><br><span class="line">[INFO] 3.19  - Ensure that /etc/default/docker file ownership is set to root:root</span><br><span class="line">[INFO]      * File not found</span><br><span class="line">[INFO] 3.20  - Ensure that /etc/default/docker file permissions are set to 644 or more restrictive</span><br><span class="line">[INFO]      * File not found</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[INFO] 4 - Container Images and Build File</span><br><span class="line">[WARN] 4.1  - Ensure a user for the container has been created</span><br><span class="line">[WARN]      * Running as root: k8s_POD_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * Running as root: k8s_POD_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[WARN]      * Running as root: k8s_POD_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Running as root: k8s_POD_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * Running as root: k8s_POD_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * Running as root: portainer</span><br><span class="line">[NOTE] 4.2  - Ensure that containers use trusted base images</span><br><span class="line">[NOTE] 4.3  - Ensure unnecessary packages are not installed in the container</span><br><span class="line">[NOTE] 4.4  - Ensure images are scanned and rebuilt to include security patches</span><br><span class="line">[WARN] 4.5  - Ensure Content trust for Docker is Enabled</span><br><span class="line">[WARN] 4.6  - Ensure HEALTHCHECK instructions have been added to the container image</span><br><span class="line">[WARN]      * No Healthcheck found: [jenkinsci/blueocean:latest]</span><br><span class="line">[WARN]      * No Healthcheck found: [portainer/portainer-ce:latest]</span><br><span class="line">[WARN]      * No Healthcheck found: [nginx:latest]</span><br><span class="line">[WARN]      * No Healthcheck found: [jenkins/jenkins:lts]</span><br><span class="line">[WARN]      * No Healthcheck found: [rancher/klipper-helm:v0.3.2]</span><br><span class="line">[WARN]      * No Healthcheck found: [rancher/coredns-coredns:1.8.0]</span><br><span class="line">[WARN]      * No Healthcheck found: [rancher/local-path-provisioner:v0.0.14]</span><br><span class="line">[WARN]      * No Healthcheck found: [rancher/library-traefik:1.7.19]</span><br><span class="line">[WARN]      * No Healthcheck found: [rancher/metrics-server:v0.3.6]</span><br><span class="line">[WARN]      * No Healthcheck found: [rancher/klipper-lb:v0.1.2]</span><br><span class="line">[WARN]      * No Healthcheck found: [rancher/pause:3.1]</span><br><span class="line">[INFO] 4.7  - Ensure update instructions are not use alone in the Dockerfile</span><br><span class="line">[INFO]      * Update instruction found: [jenkins/jenkins:lts]</span><br><span class="line">[NOTE] 4.8  - Ensure setuid and setgid permissions are removed in the images</span><br><span class="line">[INFO] 4.9  - Ensure COPY is used instead of ADD in Dockerfile</span><br><span class="line">[INFO]      * ADD in image history: [jenkinsci/blueocean:latest]</span><br><span class="line">[INFO]      * ADD in image history: [nginx:latest]</span><br><span class="line">[INFO]      * ADD in image history: [jenkins/jenkins:lts]</span><br><span class="line">[INFO]      * ADD in image history: [rancher/klipper-helm:v0.3.2]</span><br><span class="line">[INFO]      * ADD in image history: [rancher/coredns-coredns:1.8.0]</span><br><span class="line">[INFO]      * ADD in image history: [rancher/local-path-provisioner:v0.0.14]</span><br><span class="line">[INFO]      * ADD in image history: [rancher/klipper-lb:v0.1.2]</span><br><span class="line">[INFO]      * ADD in image history: [docker/docker-bench-security:latest]</span><br><span class="line">[INFO]      * ADD in image history: [rancher/pause:3.1]</span><br><span class="line">[NOTE] 4.10  - Ensure secrets are not stored in Dockerfiles</span><br><span class="line">[NOTE] 4.11  - Ensure verified packages are only Installed</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[INFO] 5 - Container Runtime</span><br><span class="line">[WARN] 5.1  - Ensure AppArmor Profile is Enabled</span><br><span class="line">[WARN]      * No AppArmorProfile Found: k8s_traefik_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * No AppArmorProfile Found: k8s_POD_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * No AppArmorProfile Found: k8s_coredns_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[WARN]      * No AppArmorProfile Found: k8s_lb-port-443_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * No AppArmorProfile Found: k8s_lb-port-80_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * No AppArmorProfile Found: k8s_metrics-server_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * No AppArmorProfile Found: k8s_local-path-provisioner_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * No AppArmorProfile Found: k8s_POD_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[WARN]      * No AppArmorProfile Found: k8s_POD_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * No AppArmorProfile Found: k8s_POD_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * No AppArmorProfile Found: k8s_POD_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * No AppArmorProfile Found: portainer</span><br><span class="line">[WARN] 5.2  - Ensure SELinux security options are set, if applicable</span><br><span class="line">[WARN]      * No SecurityOptions Found: portainer</span><br><span class="line">[WARN] 5.3  - Ensure Linux Kernel Capabilities are restricted within containers</span><br><span class="line">[WARN]      * Capabilities added: CapAdd=[NET_ADMIN] to k8s_lb-port-443_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Capabilities added: CapAdd=[NET_ADMIN] to k8s_lb-port-80_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[PASS] 5.4  - Ensure privileged containers are not used</span><br><span class="line">[PASS] 5.5  - Ensure sensitive host system directories are not mounted on containers</span><br><span class="line">[PASS] 5.6  - Ensure ssh is not run within containers</span><br><span class="line">[PASS] 5.7  - Ensure privileged ports are not mapped within containers</span><br><span class="line">[NOTE] 5.8  - Ensure only needed ports are open on the container</span><br><span class="line">[PASS] 5.9  - Ensure the host&#x27;s network namespace is not shared</span><br><span class="line">[WARN] 5.10  - Ensure memory usage for container is limited</span><br><span class="line">[WARN]      * Container running without memory restrictions: k8s_traefik_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * Container running without memory restrictions: k8s_POD_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * Container running without memory restrictions: k8s_lb-port-443_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Container running without memory restrictions: k8s_lb-port-80_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Container running without memory restrictions: k8s_metrics-server_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * Container running without memory restrictions: k8s_local-path-provisioner_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * Container running without memory restrictions: k8s_POD_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[WARN]      * Container running without memory restrictions: k8s_POD_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Container running without memory restrictions: k8s_POD_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * Container running without memory restrictions: k8s_POD_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * Container running without memory restrictions: portainer</span><br><span class="line">[WARN] 5.11  - Ensure CPU priority is set appropriately on the container</span><br><span class="line">[WARN]      * Container running without CPU restrictions: portainer</span><br><span class="line">[WARN] 5.12  - Ensure the container&#x27;s root filesystem is mounted as read only</span><br><span class="line">[WARN]      * Container running with root FS mounted R/W: k8s_traefik_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * Container running with root FS mounted R/W: k8s_POD_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * Container running with root FS mounted R/W: k8s_lb-port-443_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Container running with root FS mounted R/W: k8s_lb-port-80_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Container running with root FS mounted R/W: k8s_metrics-server_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * Container running with root FS mounted R/W: k8s_local-path-provisioner_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * Container running with root FS mounted R/W: k8s_POD_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[WARN]      * Container running with root FS mounted R/W: k8s_POD_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Container running with root FS mounted R/W: k8s_POD_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * Container running with root FS mounted R/W: k8s_POD_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * Container running with root FS mounted R/W: portainer</span><br><span class="line">[WARN] 5.13  - Ensure incoming container traffic is binded to a specific host interface</span><br><span class="line">[WARN]      * Port being bound to wildcard IP: 0.0.0.0 in portainer</span><br><span class="line">[WARN]      * Port being bound to wildcard IP: 0.0.0.0 in portainer</span><br><span class="line">[WARN] 5.14  - Ensure &#x27;on-failure&#x27; container restart policy is set to &#x27;5&#x27;</span><br><span class="line">[WARN]      * MaximumRetryCount is not set to 5: k8s_traefik_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * MaximumRetryCount is not set to 5: k8s_POD_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * MaximumRetryCount is not set to 5: k8s_coredns_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[WARN]      * MaximumRetryCount is not set to 5: k8s_lb-port-443_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * MaximumRetryCount is not set to 5: k8s_lb-port-80_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * MaximumRetryCount is not set to 5: k8s_metrics-server_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * MaximumRetryCount is not set to 5: k8s_local-path-provisioner_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * MaximumRetryCount is not set to 5: k8s_POD_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[WARN]      * MaximumRetryCount is not set to 5: k8s_POD_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * MaximumRetryCount is not set to 5: k8s_POD_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * MaximumRetryCount is not set to 5: k8s_POD_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * MaximumRetryCount is not set to 5: portainer</span><br><span class="line">[PASS] 5.15  - Ensure the host&#x27;s process namespace is not shared</span><br><span class="line">[PASS] 5.16  - Ensure the host&#x27;s IPC namespace is not shared</span><br><span class="line">[PASS] 5.17  - Ensure host devices are not directly exposed to containers</span><br><span class="line">[INFO] 5.18  - Ensure the default ulimit is overwritten at runtime, only if needed</span><br><span class="line">[INFO]      * Container no default ulimit override: k8s_traefik_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[INFO]      * Container no default ulimit override: k8s_POD_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[INFO]      * Container no default ulimit override: k8s_coredns_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[INFO]      * Container no default ulimit override: k8s_lb-port-443_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[INFO]      * Container no default ulimit override: k8s_lb-port-80_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[INFO]      * Container no default ulimit override: k8s_metrics-server_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[INFO]      * Container no default ulimit override: k8s_local-path-provisioner_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[INFO]      * Container no default ulimit override: k8s_POD_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[INFO]      * Container no default ulimit override: k8s_POD_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[INFO]      * Container no default ulimit override: k8s_POD_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[INFO]      * Container no default ulimit override: k8s_POD_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[INFO]      * Container no default ulimit override: portainer</span><br><span class="line">[PASS] 5.19  - Ensure mount propagation mode is not set to shared</span><br><span class="line">[PASS] 5.20  - Ensure the host&#x27;s UTS namespace is not shared</span><br><span class="line">[WARN] 5.21  - Ensure the default seccomp profile is not Disabled</span><br><span class="line">[WARN]      * Default seccomp profile disabled: k8s_traefik_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * Default seccomp profile disabled: k8s_coredns_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[WARN]      * Default seccomp profile disabled: k8s_lb-port-443_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Default seccomp profile disabled: k8s_lb-port-80_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Default seccomp profile disabled: k8s_metrics-server_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * Default seccomp profile disabled: k8s_local-path-provisioner_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[NOTE] 5.22  - Ensure docker exec commands are not used with privileged option</span><br><span class="line">[NOTE] 5.23  - Ensure docker exec commands are not used with user option</span><br><span class="line">[WARN] 5.24  - Ensure cgroup usage is confirmed</span><br><span class="line">[WARN]      * Confirm cgroup usage: k8s_traefik_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * Confirm cgroup usage: k8s_POD_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * Confirm cgroup usage: k8s_coredns_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[WARN]      * Confirm cgroup usage: k8s_lb-port-443_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Confirm cgroup usage: k8s_lb-port-80_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Confirm cgroup usage: k8s_metrics-server_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * Confirm cgroup usage: k8s_local-path-provisioner_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * Confirm cgroup usage: k8s_POD_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[WARN]      * Confirm cgroup usage: k8s_POD_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Confirm cgroup usage: k8s_POD_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * Confirm cgroup usage: k8s_POD_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN] 5.25  - Ensure the container is restricted from acquiring additional privileges</span><br><span class="line">[WARN]      * Privileges not restricted: k8s_traefik_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * Privileges not restricted: k8s_lb-port-443_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Privileges not restricted: k8s_lb-port-80_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Privileges not restricted: k8s_metrics-server_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * Privileges not restricted: k8s_local-path-provisioner_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * Privileges not restricted: portainer</span><br><span class="line">[WARN] 5.26  - Ensure container health is checked at runtime</span><br><span class="line">[WARN]      * Health check not set: k8s_traefik_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * Health check not set: k8s_POD_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * Health check not set: k8s_coredns_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[WARN]      * Health check not set: k8s_lb-port-443_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Health check not set: k8s_lb-port-80_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Health check not set: k8s_metrics-server_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * Health check not set: k8s_local-path-provisioner_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * Health check not set: k8s_POD_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[WARN]      * Health check not set: k8s_POD_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * Health check not set: k8s_POD_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * Health check not set: k8s_POD_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * Health check not set: portainer</span><br><span class="line">[INFO] 5.27  - Ensure docker commands always get the latest version of the image</span><br><span class="line">[WARN] 5.28  - Ensure PIDs cgroup limit is used</span><br><span class="line">[WARN]      * PIDs limit not set: k8s_traefik_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * PIDs limit not set: k8s_POD_traefik-677b9fc84d-wtpff_kube-system_35ffe8a3-a723-4d83-947a-aa02f507d339_0</span><br><span class="line">[WARN]      * PIDs limit not set: k8s_coredns_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[WARN]      * PIDs limit not set: k8s_lb-port-443_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * PIDs limit not set: k8s_lb-port-80_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * PIDs limit not set: k8s_metrics-server_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * PIDs limit not set: k8s_local-path-provisioner_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * PIDs limit not set: k8s_POD_coredns-854c77959c-bsq8v_kube-system_7660dc69-7b83-45cf-b372-b3dce097d507_0</span><br><span class="line">[WARN]      * PIDs limit not set: k8s_POD_svclb-traefik-c5glg_kube-system_2054482e-3317-4911-a20e-ae7a57389d22_0</span><br><span class="line">[WARN]      * PIDs limit not set: k8s_POD_local-path-provisioner-7c458769fb-sp28n_kube-system_1219dd2d-2b55-422f-a25b-1a85dd999598_0</span><br><span class="line">[WARN]      * PIDs limit not set: k8s_POD_metrics-server-86cbb8457f-m6pb8_kube-system_63aad458-fde9-46df-9d41-58bb3b87d1ea_0</span><br><span class="line">[WARN]      * PIDs limit not set: portainer</span><br><span class="line">[INFO] 5.29  - Ensure Docker&#x27;s default bridge docker0 is not used</span><br><span class="line">[INFO]      * Container in docker0 network: portainer</span><br><span class="line">[PASS] 5.30  - Ensure the host&#x27;s user namespaces is not shared</span><br><span class="line">[WARN] 5.31  - Ensure the Docker socket is not mounted inside any containers</span><br><span class="line">[WARN]      * Docker socket shared: portainer</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[INFO] 6 - Docker Security Operations</span><br><span class="line">[INFO] 6.1  - Avoid image sprawl</span><br><span class="line">[INFO]      * There are currently: 12 images</span><br><span class="line">[INFO] 6.2  - Avoid container sprawl</span><br><span class="line">[INFO]      * There are currently a total of 16 containers, with 13 of them currently running</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[INFO] 7 - Docker Swarm Configuration</span><br><span class="line">[PASS] 7.1  - Ensure swarm mode is not Enabled, if not needed</span><br><span class="line">[PASS] 7.2  - Ensure the minimum number of manager nodes have been created in a swarm (Swarm mode not enabled)</span><br><span class="line">[PASS] 7.3  - Ensure swarm services are binded to a specific host interface (Swarm mode not enabled)</span><br><span class="line">[PASS] 7.4  - Ensure data exchanged between containers are encrypted on different nodes on the overlay network</span><br><span class="line">[PASS] 7.5  - Ensure Docker&#x27;s secret management commands are used for managing secrets in a Swarm cluster (Swarm mode not enabled)</span><br><span class="line">[PASS] 7.6  - Ensure swarm manager is run in auto-lock mode (Swarm mode not enabled)</span><br><span class="line">[PASS] 7.7  - Ensure swarm manager auto-lock key is rotated periodically (Swarm mode not enabled)</span><br><span class="line">[PASS] 7.8  - Ensure node certificates are rotated as appropriate (Swarm mode not enabled)</span><br><span class="line">[PASS] 7.9  - Ensure CA certificates are rotated as appropriate (Swarm mode not enabled)</span><br><span class="line">[PASS] 7.10  - Ensure management plane traffic has been separated from data plane traffic (Swarm mode not enabled)</span><br><span class="line"></span><br><span class="line">[INFO] Checks: 105</span><br><span class="line">[INFO] Score: 7</span><br><span class="line">You have new mail.                                                   </span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="docker-compose"><a href="#docker-compose" class="headerlink" title="docker-compose"></a>docker-compose</h2><h2 id="1-1-使用例子"><a href="#1-1-使用例子" class="headerlink" title="1.1 *使用例子*"></a><strong>1.1</strong> <em><strong>*使用例子*</strong></em></h2><h3 id="1-1-1-wordpress-mysql"><a href="#1-1-1-wordpress-mysql" class="headerlink" title="1.1.1 *wordpress+mysql*"></a><strong>1.1.1</strong> <em><strong>*wordpress+mysql*</strong></em></h3><p>[root@docker comtest]# cat docker-compose.yml </p>
+<p>version: ‘3.3’</p>
+<p>services:</p>
+<p>  db:</p>
+<p>   image: mysql:5.7.21</p>
+<p>   volumes:</p>
+<p>​    - db_data:/var/lib/mysql</p>
+<p>   restart: always</p>
+<p>   environment:</p>
+<p>​    MYSQL_ROOT_PASSWORD: somewordpress</p>
+<p>​    MYSQL_DATABASE: wordpress</p>
+<p>​    MYSQL_USER: wordpress</p>
+<p>​    MYSQL_PASSWORD: wordpress</p>
+<p>  wordpress:</p>
+<p>   depends_on: # 依赖的容器，在db启动后启动</p>
+<p>​    - db</p>
+<p>   image: wordpress:latest</p>
+<p>   ports:</p>
+<p>​    - “8000:80”</p>
+<p>   restart: always</p>
+<p>   environment:</p>
+<p>​    WORDPRESS_DB_HOST: db:3306</p>
+<p>​    WORDPRESS_DB_USER: wordpress</p>
+<p>​    WORDPRESS_DB_PASSWORD: wordpress</p>
+<p>​    WORDPRESS_DB_NAME: wordpress</p>
+<p>volumes:</p>
+<p>  db_data: {}</p>
+<p>运行命令</p>
+<p>docker-compose up -d</p>
+<p>-d 后台运行</p>
+<p>-f 指定yml配置文件</p>
+<p>关机和清理</p>
+<p>该命令<a target="_blank" rel="noopener" href="https://docs.docker.com/compose/reference/down/">docker-compose down</a>将删除容器和默认网络，但会保留WordPress数据库。</p>
+<p>该命令docker-compose down –volumes将删除容器，默认网络和WordPress数据库</p>
+<h3 id="1-1-2-django运行的例子"><a href="#1-1-2-django运行的例子" class="headerlink" title="1.1.2 *django运行的例子*"></a><strong>1.1.2</strong> <em><strong>*django运行的例子*</strong></em></h3><p><a target="_blank" rel="noopener" href="https://docs.docker.com/compose/django/">https://docs.docker.com/compose/django/</a></p>
+<h3 id="1-1-3-rails"><a href="#1-1-3-rails" class="headerlink" title="1.1.3 *rails*"></a><strong>1.1.3</strong> <em><strong>*rails*</strong></em></h3><p><a target="_blank" rel="noopener" href="https://docs.docker.com/compose/rails/">https://docs.docker.com/compose/rails/</a></p>
+<h3 id="1-1-4-prometheus-基础三件套"><a href="#1-1-4-prometheus-基础三件套" class="headerlink" title="1.1.4 *prometheus**基础三件套*"></a><strong>1.1.4</strong> <em><strong>*prometheus*</strong></em><em><strong>*基础三件套*</strong></em></h3><p>docker-composer.yml</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">version: &#x27;2&#x27;</span><br><span class="line"></span><br><span class="line">services:</span><br><span class="line"></span><br><span class="line"> node-exporter: </span><br><span class="line"></span><br><span class="line">  image:  prom/node-exporter:latest</span><br><span class="line"></span><br><span class="line">  restart: &quot;always&quot;</span><br><span class="line"></span><br><span class="line">  ports: </span><br><span class="line"></span><br><span class="line">   \- &quot;9100:9100&quot;</span><br><span class="line"></span><br><span class="line">  volumes:</span><br><span class="line"></span><br><span class="line">   \- /proc:/host/proc:ro</span><br><span class="line"></span><br><span class="line">   \- /sys:/host/sys:ro</span><br><span class="line"></span><br><span class="line">   \- /:/rootfs:ro</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line"> prometheus: </span><br><span class="line"></span><br><span class="line">  image:  prom/prometheus:latest</span><br><span class="line"></span><br><span class="line">  restart: &quot;always&quot;</span><br><span class="line"></span><br><span class="line">  ports: </span><br><span class="line"></span><br><span class="line">   \- &quot;9090:9090&quot;</span><br><span class="line"></span><br><span class="line">  volumes:</span><br><span class="line"></span><br><span class="line">   \- /data/prometheus/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml</span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line"> grafana: </span><br><span class="line"></span><br><span class="line">  image:  grafana/grafana:latest</span><br><span class="line"></span><br><span class="line">  restart: &quot;always&quot;</span><br><span class="line"></span><br><span class="line">  ports: </span><br><span class="line"></span><br><span class="line">   \- &quot;8602:3000&quot;</span><br><span class="line"></span><br><span class="line">  volumes:</span><br><span class="line"></span><br><span class="line">   \- /data/prometheus/grafana-storage:/var/lib/grafana</span><br><span class="line"></span><br><span class="line">  container_name: &quot;grafana&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 871214098@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
